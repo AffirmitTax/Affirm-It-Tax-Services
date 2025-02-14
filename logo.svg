@@ -1,0 +1,11 @@
+<svg version="1.1" id="AffirmItLogo" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+     viewBox="0 0 300 80" xml:space="preserve">
+  <!-- Background with rounded corners -->
+  <rect x="0" y="0" width="300" height="80" rx="10" ry="10" fill="#003366"/>
+  <!-- Stylized check mark icon -->
+  <path d="M20,40 L35,55 L60,25" stroke="#FFD700" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Company Name -->
+  <text x="80" y="50" font-family="Arial, sans-serif" font-size="24" fill="#FFD700">
+    Affirm It Tax Services
+  </text>
+</svg>

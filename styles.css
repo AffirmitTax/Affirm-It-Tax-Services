@@ -1,0 +1,168 @@
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #003366;
+  color: #FFD700;
+}
+
+/* Blue and Gold Color Scheme */
+/* Header and Navigation */
+header, .header {
+  background: #003366;  /* Blue background */
+  color: #FFD700;       /* Gold text */
+  padding: 10px 0;
+  text-align: center;
+}
+
+.navbar .logo,
+.nav-links a {
+  color: #FFD700;
+}
+
+.logo img {
+  width: 150px;  /* Adjust as needed */
+  height: auto;
+}
+
+/* Buttons */
+.btn-cta,
+.btn-primary,
+.btn-secondary {
+  background: #003366;  /* Blue background */
+  color: #FFD700;       /* Gold text */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-cta:hover,
+.btn-primary:hover,
+.btn-secondary:hover {
+  background: #002244;  /* Darker blue on hover */
+}
+
+/* Modal Styles */
+.modal {
+  background: #fff;
+  border: 3px solid #003366;
+  padding: 20px;
+  border-radius: 8px;
+  width: 80%;
+  max-width: 500px;
+}
+
+/* Additional styles below... */
+/* Navigation */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.nav-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  display: inline;
+  margin-left: 15px;
+}
+
+/* Hero Section */
+.hero {
+  background: url('hero.jpg') center/cover no-repeat;
+  padding: 100px 20px;
+  text-align: center;
+  color: #FFD700;
+}
+
+/* Sections */
+section {
+  padding: 20px;
+  margin: 20px;
+  background: #9c9494;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Submission Form Styles */
+.submission-form form {
+  width: 50%;
+  margin: 0 auto; /* centers the form horizontally */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+
+.submission-form form label {
+  grid-column: span 2;
+  font-weight: bold;
+}
+
+.submission-form form input,
+.submission-form form textarea,
+.submission-form form select {
+  grid-column: span 2;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.submission-form form input[type="checkbox"] {
+  grid-column: span 1;
+  margin-right: 5px;
+}
+
+.submission-form form .checkbox-label {
+  grid-column: span 2;
+}
+
+.submission-form form button {
+  grid-column: span 2;
+  padding: 10px;
+  background: #003366;
+  color: #FFD700;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.submission-form form button:hover {
+  background: #002244;
+}
+
+/* FAQ Section */
+.faq-section .faq-title {
+  background: #eee;
+  border: none;
+  width: 100%;
+  padding: 10px;
+  text-align: left;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.faq-section .faq-content {
+  display: none;
+  padding: 10px;
+  background: #f9f9f9;
+}
+
+/* Modal Overlay */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}

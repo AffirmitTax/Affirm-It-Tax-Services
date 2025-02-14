@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <!-- Updated title as per instructions -->
+  <title>Get Started Here - Business Return -1099 &amp; Self-Employed only</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header class="header">
+    <nav class="navbar">
+      <!-- Logo Section -->
+      <div class="logo">
+        <img src="logo.svg" alt="Affirm It Tax Services Logo" />
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="personal-return-only-w2.html">Personal Taxes</a></li>
+        <li><a href="business-tax-returns.html">Business Taxes</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <h1>Get Started Here</h1>
+    <h2>Business Return -1099 &amp; Self-Employed only</h2>
+  </header>
+  
+
+  <main>
+    <h2>Business Tax Returns</h2>
+
+    <section class="deductions-section">
+      <h3>Have Business Deductions?</h3>
+      <p>Click on the links below for the yearly deduction tax forms:</p>
+  
+      <ul>
+        <li>
+          <a href="https://docs.google.com/spreadsheets/d/1M8AtCpDK-89UON8S-qvA5Muz8cP7MxLKY7nxLwrD5Z8/edit?usp=sharing" download>
+            Click here for Business Expense January-June Monthly Organizer
+          </a>
+        </li>
+        <li>
+          <a href="https://docs.google.com/spreadsheets/d/1vrApuvSy9PIVr18yEmXKxT3lgoGPCojeydmut4LqVb0/edit?usp=sharing" download>
+            Click here for Business Expense July-December Monthly Organizer
+          </a>
+        </li>
+      </ul>
+    </section>
+    <!-- Existing interactive section for business fee calculation -->
+    <section class="calculator-section">
+      <h2>Calculate Your Business Return Fee</h2>
+      <label for="businessType">Select Your Business Type:</label>
+      <select id="businessType">
+        <option value="LLC">LLC</option>
+        <option value="S-Corp">S-Corp</option>
+        <option value="C-Corp">C-Corp</option>
+        <option value="Partnership">Partnership</option>
+      </select>
+
+      <label for="formsCount">Number of Additional Forms (e.g., K-1s):</label>
+      <input type="number" id="formsCount" min="0" max="10" value="0" />
+
+      <button id="calcBusinessButton">Calculate</button>
+      <div id="businessCalcResult" class="result-box"></div>
+    </section>
+
+    <section class="faq-section">
+      <h2>Business Tax FAQs</h2>
+      <div class="faq-item">
+        <button class="faq-title">What if I have multiple partners or shareholders?</button>
+        <div class="faq-content">
+          <p>Each partner or shareholder typically requires a separate K-1 form, which may affect your total fee.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-title">What documents are required?</button>
+        <div class="faq-content">
+          <p>You’ll need business income statements, expenses, balance sheets, and any prior returns.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- "Book Appointment" modal trigger for business -->
+    <button id="openModalBtn2" class="btn-primary">Book Appointment</button>
+    <div id="modalOverlay2" class="modal-overlay">
+      <div class="modal">
+        <h3>Book Your Appointment (Business)</h3>
+        <p>Let us know about your business and we’ll reach out.</p>
+        <label for="bizName">Business Name:</label>
+        <input type="text" id="bizName" placeholder="ABC Corp" />
+        <label for="bizEmail">Contact Email:</label>
+        <input type="email" id="bizEmail" placeholder="info@abccorp.com" />
+        <button id="closeModalBtn2" class="btn-secondary">Close</button>
+      </div>
+    </div>
+
+    <!-- New Submission Form -->
+    <section class="submission-form">
+      <h2>Contact Form</h2>
+      <form action="submit_business.php" method="post" enctype="multipart/form-data">
+        <label for="firstName">First Name *</label>
+        <input type="text" id="firstName" name="firstName" required>
+
+        <label for="lastName">Last Name *</label>
+        <input type="text" id="lastName" name="lastName" required>
+
+        <label for="email">E-Mail *</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Phone Number *</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <label for="address">Address *</label>
+        <input type="text" id="address" name="address" required>
+
+        <label for="city">City *</label>
+        <input type="text" id="city" name="city" required>
+
+        <label for="stateZip">State / Zip *</label>
+        <input type="text" id="stateZip" name="stateZip" required>
+
+        <label for="howFound">How did you find us? *</label>
+        <input type="text" id="howFound" name="howFound" required>
+
+        <label for="yourQuestion">Your Question? *</label>
+        <input type="text" id="yourQuestion" name="yourQuestion" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message"></textarea>
+
+        <!-- Option to upload or fax documents -->
+        <label for="uploadDocs">Upload Documents:</label>
+        <input type="file" id="uploadDocs" name="uploadDocs" multiple>
+        <p>Or fax documents at: 813-354-2348</p>
+
+        <!-- Agreement checkbox -->
+        <label class="checkbox-label">
+          <input type="checkbox" name="agreement" required>
+          I agree the information being sent is true to my knowledge for all tax purposes and will be used to file my taxes for that purpose. *
+        </label>
+
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2025 Affirm It Tax Services - Business Return Page (Demo)</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <!-- Updated title as per instructions -->
+  <title>Get Started Here - Personal Return W2/Job only</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+ 
+    <header class="header">
+      <nav class="navbar">
+        <!-- Logo Section -->
+        <div class="logo">
+          <img src="logo.svg" alt="Affirm It Tax Services Logo" />
+        </div>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="personal-return-only-w2.html">Personal Taxes</a></li>
+          <li><a href="business-tax-returns.html">Business Taxes</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <h1>Get Started Here</h1>
+      <h2>Personal Return W2/Job only</h2>
+    </header>
+    
+
+  <main>
+    <!-- Existing interactive sections -->
+    <section class="calculator-section">
+      <h2>Calculate Your Estimated Fee</h2>
+      <h2>Base rate for W2 $200.Each additional form $15</h2>
+      <label for="w2Count">Number of Additional Forms (e.g.,W2,1099,1098-T,etc):</label>
+      <input type="number" id="w2Count" min="1" max="20" value="1" />
+      
+      <label for="extraStates">Additional State Returns? (each $30):</label>
+      <input type="number" id="extraStates" min="0" max="5" value="0" />
+
+      <button id="calcButton">Calculate</button>
+      <div id="calcResult" class="result-box"></div>
+    </section>
+
+    <section class="faq-section">
+      <h2>Frequently Asked Questions</h2>
+      <div class="faq-item">
+        <button class="faq-title">What documents do I need?</button>
+        <div class="faq-content">
+          <p>You will need all your W-2 forms, a valid ID, and any prior year’s tax returns.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-title">What if I have multiple employers?</button>
+        <div class="faq-content">
+          <p>Simply add the total number of W-2 forms to the box above. Each additional W-2 may increase your fee.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- "Book Appointment" modal trigger -->
+    <button id="openModalBtn" class="btn-primary">Book Appointment</button>
+    <div id="modalOverlay" class="modal-overlay">
+      <div class="modal">
+        <h3>Book Your Appointment</h3>
+        <p>Fill out the form below and we’ll contact you shortly.</p>
+        <label for="nameInput">Name:</label>
+        <input type="text" id="nameInput" placeholder="John Doe" />
+        <label for="emailInput">Email:</label>
+        <input type="email" id="emailInput" placeholder="john@example.com" />
+        <button id="closeModalBtn" class="btn-secondary">Close</button>
+      </div>
+    </div>
+
+    <!-- New Submission Form -->
+    <section class="submission-form">
+      <h2>Contact Form</h2>
+      <form action="submit_personal.php" method="post" enctype="multipart/form-data">
+        <label for="firstName">First Name *</label>
+        <input type="text" id="firstName" name="firstName" required>
+
+        <label for="lastName">Last Name *</label>
+        <input type="text" id="lastName" name="lastName" required>
+
+        <label for="email">E-Mail *</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Phone Number *</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <label for="address">Address *</label>
+        <input type="text" id="address" name="address" required>
+
+        <label for="city">City *</label>
+        <input type="text" id="city" name="city" required>
+
+        <label for="stateZip">State / Zip *</label>
+        <input type="text" id="stateZip" name="stateZip" required>
+
+        <label for="howFound">How did you find us? *</label>
+        <input type="text" id="howFound" name="howFound" required>
+
+        <label for="yourQuestion">Your Question? *</label>
+        <input type="text" id="yourQuestion" name="yourQuestion" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message"></textarea>
+
+        <!-- Option to upload or fax documents -->
+        <label for="uploadDocs">Upload Documents:</label>
+        <input type="file" id="uploadDocs" name="uploadDocs" multiple>
+        <p>Or fax documents at: 813-354-2348</p>
+
+        <!-- Agreement checkbox -->
+        <label class="checkbox-label">
+          <input type="checkbox" name="agreement" required>
+          I agree the information being sent is true to my knowledge for all tax purposes and will be used to file my taxes for that purpose. *
+        </label>
+
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2025 Affirm It Tax Services - Personal W2 Page (Demo)</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
